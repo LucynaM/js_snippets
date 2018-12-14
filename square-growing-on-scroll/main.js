@@ -1,3 +1,5 @@
+// Make square grow when scrolling. When square size outpasses half of window width, start to decrease its size till 0, than make it grow again. 
+
 const div = document.createElement('div');
 document.body.appendChild(div);
 

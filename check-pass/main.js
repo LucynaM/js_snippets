@@ -14,5 +14,14 @@ const checkPass = (e) => {
         } 
     })
 }
+const changeBackground = (e) => {
+    e.target.classList.add('active');
+}
+
+const restoreBackground = (e) => {
+    e.target.classList.remove('active');
+}
 
 input.addEventListener('input', checkPass);
+input.addEventListener('focus', changeBackground);
+input.addEventListener('blur', restoreBackground);

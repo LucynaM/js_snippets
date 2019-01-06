@@ -8,8 +8,8 @@ class Wallet {
         this.getWalletValue = () => _money;
         // money setter
         this.setWalletValue = (changeValue, i = 1) => {
-            if (typeof value === 'number' && !(isNaN(value))) {
-                _money += changeValue * i;
+            if (typeof changeValue === 'number' && !isNaN(changeValue)) {
+                _money += (changeValue * i);
             } else {
                 throw new Error('Invalid number');
             }
